@@ -1,5 +1,11 @@
 package ru.job4j.condition;
  
+ /**
+ * Class Point 3.2. определение принадлежности точки функции.
+ * @author Shaev Andrey.
+ * @version 1.01.
+ * @since 18.11.17.
+*/
 public class Point {
    private int x;
    private int y;
@@ -17,7 +23,6 @@ public class Point {
      return this.y;
   }
   public boolean is(int a, int b) {
-    if (this.y==a*this.x+b) {return true;};
-	return false;
+    return this.y==a*this.x+b;
   } 
 }
